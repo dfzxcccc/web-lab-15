@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "title": "Pudge",
+    "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/pudge.png",
+    "stat": "65%",
+    "description": "Легендарний герой із м'ясним гаком."
+  },
+  {
+    "id": 2,
+    "title": "Anti-Mage",
+    "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/antimage.png",
+    "stat": "58%",
+    "description": "Мобільний керрі, який швидко накопичує ресурси."
+  },
+  {
+    "id": 3,
+    "title": "Invoker",
+    "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/invoker.png",
+    "stat": "53%",
+    "description": "Складний маг, який комбінує десять заклинань."
+  },
+  {
+    "id": 4,
+    "title": "Juggernaut",
+    "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/juggernaut.png",
+    "stat": "60%",
+    "description": "Надійний керрі з потужною ультимативною здатністю."
+  },
+  {
+    "id": 5,
+    "title": "Arc Warden",
+    "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/arc_warden.png",
+    "stat": "80%",
+    "description": "Майстер мікроконтролю та створення копій."
+  },
+  {
+    "id": 6,
+    "title": "Broodmother",
+    "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/broodmother.png",
+    "stat": "75%",
+    "description": "Захоплює лінію за допомогою орди павуків."
+  },
+  {
+    "id": 7,
+    "title": "Grimstroke",
+    "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/grimstroke.png",
+    "stat": "52%",
+    "description": "Зв'язує ворогів темною магією та чорнилом."
+  },
+  {
+    "id": 8,
+    "title": "Beastmaster",
+    "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/beastmaster.png",
+    "stat": "56%",
+    "description": "Контролює карту за допомогою призваних істот."
+  },
+  {
+    "id": 9,
+    "title": "Keeper of the Light",
+    "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/keeper_of_the_light.png",
+    "stat": "54%",
+    "description": "Відновлює ману союзникам і випускає світлові хвилі."
+  },
+  {
+    "id": 10,
+    "title": "Dazzle",
+    "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dazzle.png",
+    "stat": "57%",
+    "description": "Рятує союзників від смерті та послаблює броню ворогів."
+  },
+  {
+    "id": 11,
+    "title": "Shadow Shaman",
+    "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/shadow_shaman.png",
+    "stat": "59%",
+    "description": "Утримує ворогів у контролі та швидко руйнує вежі."
+  },
+  {
+    "id": 12,
+    "title": "Crystal Maiden",
+    "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/crystal_maiden.png",
+    "stat": "51%",
+    "description": "Забезпечує команду маною та заморожує супротивників."
+  },
+  {
+    "id": 13,
+    "title": "Io",
+    "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/wisp.png",
+    "stat": "62%",
+    "description": "Підсилює союзника та переміщує його по всій карті."
+  },
+  {
+    "id": 14,
+    "title": "Drow Ranger",
+    "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/drow_ranger.png",
+    "stat": "68%",
+    "description": "Влучно стріляє з відстані крижаними стрілами."
+  },
+  {
+    "id": 15,
+    "title": "Terrorblade",
+    "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/terrorblade.png",
+    "stat": "63%",
+    "description": "Створює ілюзії та обмінюється рівнем здоров'я."
+  },
+  {
+    "id": 16,
+    "title": "Phantom Lancer",
+    "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/phantom_lancer.png",
+    "stat": "58%",
+    "description": "Заплутує ворогів численними подвійниками."
+  },
+  {
+    "id": 17,
+    "title": "Templar Assassin",
+    "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/templar_assassin.png",
+    "stat": "61%",
+    "description": "Використовує захисний щит та завдає критичної шкоди."
+  },
+  {
+    "id": 18,
+    "title": "Shadow Fiend",
+    "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/nevermore.png",
+    "stat": "64%",
+    "description": "Поглинає душі та випускає руйнівну хвилю тіней."
+  },
+  {
+    "id": 19,
+    "title": "Treant Protector",
+    "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/treant.png",
+    "stat": "55%",
+    "description": "Відновлює міцність споруд і маскується серед дерев."
+  },
+  {
+    "id": 20,
+    "title": "Luna",
+    "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/luna.png",
+    "stat": "59%",
+    "description": "Атакує лезами, що відскочують, та закликає місячне сяйво."
+  },
+  {
+    "id": 21,
+    "title": "Oracle",
+    "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/oracle.png",
+    "stat": "50%",
+    "description": "Тимчасово відтерміновує загибель союзника."
+  },
+  {
+    "id": 22,
+    "title": "Dark Willow",
+    "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/dark_willow.png",
+    "stat": "53%",
+    "description": "Уникає прямої атаки та оглушує ворогів у зоні дій."
+  },
+  {
+    "id": 23,
+    "title": "Lich",
+    "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/lich.png",
+    "stat": "56%",
+    "description": "Запускає крижану сферу, що вражає групи ворогів."
+  },
+  {
+    "id": 24,
+    "title": "Morphling",
+    "image": "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/morphling.png",
+    "stat": "67%",
+    "description": "Змінює свої характеристики та копіює вигляд ворога."
+  }
+]

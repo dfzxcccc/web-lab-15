@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мої Герої - Dota 2 Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">DotaProfile</div>
+         
+    <button class="menu-toggle" aria-label="Відкрити меню">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="var(--gold)" viewBox="0 0 256 256">
+        <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
+      </svg>
+    </button>
+
+    <nav class="main-nav">
+      <ul class="nav-list">
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="register.html">Приєднатися</a></li>
+        <li><a href="heroes.html" class="active">Мої Герої</a></li>
+        <li><a href="#">Матчі</a></li>
+        <li><a href="#">Про мене</a></li>
+      </ul>
+    </nav>
+
+    <div class="user-actions">
+      <button class="btn btn-cart">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+        </svg>
+        <span>Арсенал</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page-layout" style="margin-top: 40px;">
+    <aside class="sidebar">
+      <h3>Фільтри</h3>
+      <ul class="filter-list">
+        <li>
+          <label class="filter-item">
+            <input type="checkbox" />
+            <svg class="filter-icon strength" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M239.5,190.2l-32.1-32.1a16.1,16.1,0,0,0-22.6,0L170,172.9,81.4,84.3,96.3,69.4a16.1,16.1,0,0,0,0-22.6L64.2,14.7a15.9,15.9,0,0,0-22.6,0L14.7,41.6a15.9,15.9,0,0,0,0,22.6L46.8,96.3a16.1,16.1,0,0,0,22.6,0L84.3,81.4l88.6,88.6-15.2,14.9a16.1,16.1,0,0,0,0,22.6l32.1,32.1a15.9,15.9,0,0,0,22.6,0l27.1-27.1A15.8,15.8,0,0,0,239.5,190.2ZM58.1,85,26,52.9,52.9,26,85,58.1l-14.9,15L58.1,85Zm139.8,139.8-32.1-32.1,12-11.7,32.1,32.1-12,11.7Z"></path>
+            </svg>
+            Strength
+          </label>
+        </li>
+        <li>
+          <label class="filter-item">
+            <input type="checkbox" />
+            <svg class="filter-icon agility" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M216,40H136a8,8,0,0,0,0,16h48L54.6,185.4a8.1,8.1,0,0,0,0,11.4L185.4,54.6A8.1,8.1,0,0,0,196.8,43.2L66,174V126a8,8,0,0,0-16,0v80a8,8,0,0,0,8,8h80a8,8,0,0,0,0-16H90L221.4,66.6A8.1,8.1,0,0,0,221.4,55.2L196.8,43.2A8,8,0,0,0,216,40Z"></path>
+            </svg>
+            Agility
+          </label>
+        </li>
+        <li>
+          <label class="filter-item">
+            <input type="checkbox" />
+            <svg class="filter-icon intelligence" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 256 256">
+                <path d="M221,114.3,141.7,35a15.8,15.8,0,0,0-22.6,0L39.8,114.3a15.8,15.8,0,0,0,0,22.6l79.3,79.3a15.8,15.8,0,0,0,22.6,0l79.3-79.3a15.8,15.8,0,0,0,0-22.6ZM128,204.7,51.1,127.8,128,50.9l76.9,76.9-76.9,76.9ZM128,88a40,40,0,1,0,40,40A40,40,0,0,0,128,88Zm0,64a24,24,0,1,1,24-24A24,24,0,0,1,128,152Z"></path>
+            </svg>
+            Intelligence
+          </label>
+        </li>
+      </ul>
+    </aside>
+
+    <section class="products-content">
+      <h2 class="section-title">Мій Пул Героїв</h2>
+      
+      <div class="products-grid"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container text-center">
+      <ul class="social-links">
+        <li>
+          <a href="#" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+              <path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32.04,32.04,0,0,1,128,160ZM172,36H84A48.05,48.05,0,0,0,36,84v88a48.05,48.05,0,0,0,48,48h88a48.05,48.05,0,0,0,48-48V84A48.05,48.05,0,0,0,172,36Zm32,136a32.04,32.04,0,0,1-32,32H84a32.04,32.04,0,0,1-32-32V84A32.04,32.04,0,0,1,84,52h88a32.04,32.04,0,0,1,32,32ZM192,72a12,12,0,1,1-12-12A12,12,0,0,1,192,72Z"></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="Telegram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+              <path d="M236.88,26.19a9,9,0,0,0-9.16-1.57L25.06,103.93a14.22,14.22,0,0,0,2.43,27.21L80,141.45V192a15.92,15.92,0,0,0,10,14.83,15.91,15.91,0,0,0,17.51-3.73l25.32-26.26L173,220a15.88,15.88,0,0,0,10.51,4,16.3,16.3,0,0,0,5-.79,15.85,15.85,0,0,0,10.67-11.63L240.77,35.11A9,9,0,0,0,236.88,26.19ZM183.53,208,100.85,135.5,192,56.65Zm-87,2.22V151.49l25.13,22ZM224.23,42.85,185.07,208.2l-3.32-.27L63,121.29l-31.54-7.2Z"></path>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" aria-label="YouTube">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256">
+              <path d="M234.4,69.58a32.39,32.39,0,0,0-22.78-22.9C191.5,41.25,128,41.25,128,41.25s-63.5,0-83.62,5.43a32.39,32.39,0,0,0-22.78,22.9C16.17,89.7,16,128,16,128s.17,38.3,5.6,58.42a32.39,32.39,0,0,0,22.78,22.9c20.12,5.43,83.62,5.43,83.62,5.43s63.5,0,83.62-5.43a32.39,32.39,0,0,0,22.78-22.9C239.83,166.3,240,128,240,128S239.83,89.7,234.4,69.58ZM104,160V96l56,32Z"></path>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <p>&copy; 2026 DotaProfile - Dota 2 Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" type="module"></script>
+</body>
+</html>

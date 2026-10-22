@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dotaprofile - Dota 2 Коучинг</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo">DOTAPROFILE</div>
+    <nav class="main-nav">
+      <a href="index.html" class="active">Головна</a>
+      <a href="#heroes-section">Тренування</a>
+      <a href="#checkout-section">Оформлення</a>
+    </nav>
+    <button class="btn-cart">
+      <span>Кошик (<span id="cartCountBadge">0</span>)</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero-banner">
+      <div class="hero-content">
+        <h1>Індивідуальний коучинг та тренування Dota 2</h1>
+        <p>Обирай героя, замовляй тренування з лайнінгу та піднімай свій скіл з професійним тренером.</p>
+      </div>
+      <div class="hero-image-container">
+        <img src="assets/img/svyaz.jpg" alt="Связь Dota 2" style="max-height: 250px; border-radius: 8px; object-fit: contain;">
+      </div>
+    </section>
+
+    <section id="heroes-section" class="catalog-section">
+      <div class="catalog-content">
+        <h2 class="section-title">Пул героїв для тренувань</h2>
+
+        <div class="search-bar" style="margin: 20px 0; display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+          <input type="text" id="searchInput" placeholder="Пошук героя для тренування..." style="padding: 10px 14px; width: 320px; border: 1px solid #c19a5b; border-radius: 6px; background: #1a1a1d; color: #fff; font-size: 15px;">
+          <span id="searchResultCount" style="color: #c19a5b; font-size: 14px; font-weight: 500;"></span>
+        </div>
+
+        <div id="loader" style="text-align: center; color: #c19a5b; font-size: 18px; margin: 20px 0;">Завантаження...</div>
+        <div class="products-grid" style="display: none;"></div>
+      </div>
+    </section>
+
+    <section id="checkout-section" class="checkout-card" style="margin: 40px auto; padding: 24px; border: 1px solid #c19a5b; border-radius: 8px; max-width: 500px; background: #18181b; color: #fff;">
+      <h3 style="color: #c19a5b; margin-top: 0; margin-bottom: 20px; font-size: 20px;">Оформлення тренування</h3>
+      
+      <div id="liveOrderSummary" style="margin-bottom: 20px; padding: 12px; background: #242428; border: 1px solid #333; border-radius: 6px; font-size: 14px;">
+        <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+          <span>Сума замовлення:</span>
+          <span id="summarySubtotal">0 грн</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-bottom: 6px; color: #28a745;">
+          <span>Знижка:</span>
+          <span id="summaryDiscount">0 грн</span>
+        </div>
+        <div style="display: flex; justify-content: space-between; font-weight: bold; font-size: 16px; border-top: 1px solid #444; padding-top: 6px; color: #c19a5b;">
+          <span>До сплати:</span>
+          <span id="summaryTotal">0 грн</span>
+        </div>
+      </div>
+
+      <form id="checkoutOrderForm" novalidate>
+        <div class="form-row" style="margin-bottom: 14px;">
+          <label for="clientName" style="display: block; margin-bottom: 6px;">ПІБ покупця:</label>
+          <input type="text" id="clientName" name="clientName" placeholder="Коваленко Олександр Сергійович" required style="width: 100%; padding: 10px; box-sizing: border-box; background: #242428; border: 1px solid #444; border-radius: 4px; color: #fff;">
+          <span class="input-error" id="nameError" style="color: #ff5555; font-size: 13px; display: block; margin-top: 4px;"></span>
+        </div>
+
+        <div class="form-row" style="margin-bottom: 14px;">
+          <label for="clientPhone" style="display: block; margin-bottom: 6px;">Номер телефону (+380...):</label>
+          <input type="tel" id="clientPhone" name="clientPhone" placeholder="+38 (097) 123-45-67" required style="width: 100%; padding: 10px; box-sizing: border-box; background: #242428; border: 1px solid #444; border-radius: 4px; color: #fff;">
+          <span class="input-error" id="phoneError" style="color: #ff5555; font-size: 13px; display: block; margin-top: 4px;"></span>
+        </div>
+
+        <div class="form-row" style="margin-bottom: 14px;">
+          <label for="clientEmail" style="display: block; margin-bottom: 6px;">Електронна пошта:</label>
+          <input type="email" id="clientEmail" name="clientEmail" placeholder="olexandr@example.com" required style="width: 100%; padding: 10px; box-sizing: border-box; background: #242428; border: 1px solid #444; border-radius: 4px; color: #fff;">
+          <span class="input-error" id="emailError" style="color: #ff5555; font-size: 13px; display: block; margin-top: 4px;"></span>
+        </div>
+
+        <div class="form-row" style="margin-bottom: 20px;">
+          <label for="orderPromo" style="display: block; margin-bottom: 6px;">Промокод (якщо є):</label>
+          <input type="text" id="orderPromo" name="orderPromo" placeholder="Введіть SALE10 для знижки 10%" style="width: 100%; padding: 10px; box-sizing: border-box; background: #242428; border: 1px solid #444; border-radius: 4px; color: #fff;">
+        </div>
+
+        <button type="submit" id="btnPlaceOrder" style="padding: 12px 24px; background: #28a745; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; width: 100%; font-size: 16px;">
+          Підтвердити замовлення
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer" style="text-align: center; padding: 20px; color: #888;">
+    <p>&copy; 2026 DotaProfile - Dota 2 Coaching.</p>
+  </footer>
+
+  <div id="cartOverlay" class="cart-overlay hidden">
+    <div class="cart-modal">
+      <h2>Обрані тренування</h2>
+      <div id="cartItemsContainer"></div>
+      <div class="cart-footer">
+        <p>Всього до сплати: <span id="cartTotalPrice">0</span></p>
+        <button id="closeCartBtn" class="btn-close-cart">Закрити</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
